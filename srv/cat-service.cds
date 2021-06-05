@@ -16,4 +16,9 @@ service PizzaService {
         ProductCategory : Association to  Products on ProductCategory.category = $self
     }
 
+    entity Orders {
+        key OrderId : Integer;
+        
+    }
+
 }
