@@ -67,6 +67,18 @@
                     "autoExpandSelect": true,
                     "earlyRequests": true
                 }
+            },
+            "extends": {
+                "extensions": {
+                    "sap.ui.controllerExtensions": {
+                        "sap.fe.templates.ListReport.ListReportController": {
+                            "controllerName": "com.sap.pizza.ns.pizzamodule1.ext.controller.ListReportExtension"
+                        },
+                        "sap.fe.templates.ObjectPage.ObjectPageController": {
+                            "controllerName": "com.sap.pizza.ns.pizzamodule1.ext.controller.ObjectPageExtension"
+                        }
+                    }
+                }
             }
         },
         "routing": {

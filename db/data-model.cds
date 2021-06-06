@@ -5,23 +5,24 @@ using { Country, managed } from '@sap/cds/common';
 
 
   entity Products : managed {
+    @Common.Label: 'Product'
     key ID : Integer;
+    @Common.Label: 'Product Name'
     title  : localized String;
-    productName : Association to ProductsName;
-    @EndUserText : {Label: 'CategoryName'}
+    @Common.Label: 'Category'
     category : Association to CategoryName;
+    amount : Integer;
+  }
+
+  entity ProductVH  {
+      key ID : Integer;
+      ProductName : String;
   }
 
   entity CategoryName  {
       key ID : Integer;
       name : String;
       category : Association to many Products on category.category = $self;
-  }
-
-  entity ProductsName  {
-      key ID : Integer;
-      name : String(20);
-      productName : Association to many Products on productName.productName = $self;
   }
 
   entity Orders : managed {

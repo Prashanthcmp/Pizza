@@ -1,6 +1,6 @@
-ID; title; productName_ID; category_ID;
+ID; title; category_ID; amount;
 
-101;    Chees Pizza;    201;    01;
-107;    Onion Pizza;    202;    02;   
-150;    Farm House;     203;    01;
-170;    Paneer Pizza;   204;    02;
+101;    Chees Pizza;    01;     200;
+102;    Onion Pizza;    02;     300;
+103;    Farm House;     01;     400;
+104;    Paneer Pizza;   02;     500;
